@@ -2,7 +2,6 @@ USER_DATA = ['user1', 'user2', 'user3']
 PASS_DATA = ['pass1', 'pass2', 'pass3']
 
 def login(id):
-    access = False
     while True:
         id = input("User ID #: ")
         if id.isdigit():
@@ -24,7 +23,6 @@ def login(id):
         password = input("Password: ")
         if password == PASS_DATA[int(id)]:
             print("access granted")
-            access = True
             break
         else:
             print("incorrect password")
